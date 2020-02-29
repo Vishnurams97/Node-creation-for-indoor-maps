@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leaflet Indoor Map</title>
+</head>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- <link rel="stylesheet" href="./index.css"/> -->
+<body style="height:-webkit-fill-available;">
+ <div id="map" style="height:500px;">
+</div>
+<button onclick="link('r')">Right</button>
+<button onclick="link('l')">Left</button>
+<button onclick="link('t')">Top</button>
+<button onclick="link('b')">Bottom</button>
+<button onclick="fix()">Fix_node_data</button>
+<button onclick="undo()">Undo</button>
+<button onclick="pop()">Create_links</button>
+<button onclick="post_to_db()">Save to DB</button>
+<p>Enter Node name and press enter to save:</p>
+<input id="input"  onchange="fix_name()"/>
+</body>
+
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.2/leaflet.draw.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.2/leaflet.draw.js"></script>
+<script src="map_draw.js"></script>
+<!-- <script src="work_out.js"></script> -->
+</html>
